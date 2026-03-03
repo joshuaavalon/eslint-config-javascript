@@ -1,5 +1,21 @@
 # Changelog
 
+## [11.0.0](https://github.com/joshuaavalon/eslint-config-javascript/compare/v10.0.0...v11.0.0) (2026-03-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update README.md
+
+### doc
+
+* Update README.md ([813acc4](https://github.com/joshuaavalon/eslint-config-javascript/commit/813acc4821eec7f3f1f77d6d01908de543abba51))
+
+
+### Features
+
+* Migrate to new repository ([e238f25](https://github.com/joshuaavalon/eslint-config-javascript/commit/e238f25812dd240008dea4e4311aa487d6a326f3))
+
 ## [10.0.0](https://github.com/joshuaavalon/eslint-config/compare/eslint-config-javascript-v9.1.0...eslint-config-javascript-v10.0.0) (2025-10-17)
 
 
