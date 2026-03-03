@@ -45,5 +45,3 @@ jobs:
       - run: pnpm run build
       - run: pnpm run script:scalar
       - run: pnpm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
