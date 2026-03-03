@@ -19,8 +19,8 @@ importers:
         version: 5.6.0(eslint@10.0.2)(typescript@5.9.3)
     devDependencies:
       '@joshuaavalon/eslint-config-typescript':
-        specifier: ^10.0.0
-        version: 10.0.0(eslint@10.0.2)(typescript@5.9.3)
+        specifier: ^11.0.0
+        version: 11.0.0(eslint@10.0.2)(typescript@5.9.3)
       '@typescript-eslint/utils':
         specifier: ^8.46.1
         version: 8.56.1(eslint@10.0.2)(typescript@5.9.3)
@@ -85,15 +85,15 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@joshuaavalon/eslint-config-javascript@10.0.0':
-    resolution: {integrity: sha512-stYz9iKmHeJP8RnzI6JeeM+td/0/QQKMyDpFPDqqvvgCPTdjSFiM3NfUYbsft+ZvlG+4q4FAAqoBSYkzs0+tNg==}
+  '@joshuaavalon/eslint-config-javascript@11.0.2':
+    resolution: {integrity: sha512-WGDunjILtph59Wp8LMrBUj/vox736r56u8ylF9kyttjGX84/0PxE8Z3jsbH3lwpeKNVANNWlegWbwNnrLYpzJQ==}
     peerDependencies:
-      eslint: ^9.37.0
+      eslint: ^10.0.2
 
-  '@joshuaavalon/eslint-config-typescript@10.0.0':
-    resolution: {integrity: sha512-LGJcHcg0+bJkdESyWqUSz/RIs23tbHv2ihEWwV3oeH7eULQoMEXUKiqkm5YPn4mv8IwMno9GY4vSs9Zp5OWQOw==}
+  '@joshuaavalon/eslint-config-typescript@11.0.0':
+    resolution: {integrity: sha512-g/b7XRZRgnWaE0c9pMLxGubmGiZFsAV//d5XXpESatmvVLTJyYx/SQbWqNGlRfv0Li2QzxZNJTuALeqE9cYAhg==}
     peerDependencies:
-      eslint: ^9.37.0
+      eslint: ^10.0.2
 
   '@stylistic/eslint-plugin@5.9.0':
     resolution: {integrity: sha512-FqqSkvDMYJReydrMhlugc71M76yLLQWNfmGq+SIlLa7N3kHp8Qq8i2PyWrVNAfjOyOIY+xv9XaaYwvVW7vroMA==}
@@ -209,12 +209,6 @@ packages:
   escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
-
-  eslint-plugin-perfectionist@4.15.1:
-    resolution: {integrity: sha512-MHF0cBoOG0XyBf7G0EAFCuJJu4I18wy0zAoT1OHfx2o6EOx1EFTIzr2HGeuZa1kDcusoX0xJ9V7oZmaeFd773Q==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      eslint: '>=8.45.0'
 
   eslint-plugin-perfectionist@5.6.0:
     resolution: {integrity: sha512-pxrLrfRp5wl1Vol1fAEa/G5yTXxefTPJjz07qC7a8iWFXcOZNuWBItMQ2OtTzfQIvMq6bMyYcrzc3Wz++na55Q==}
@@ -524,19 +518,21 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@joshuaavalon/eslint-config-javascript@10.0.0(eslint@10.0.2)(typescript@5.9.3)':
+  '@joshuaavalon/eslint-config-javascript@11.0.2(eslint@10.0.2)(typescript@5.9.3)':
     dependencies:
       '@stylistic/eslint-plugin': 5.9.0(eslint@10.0.2)
       eslint: 10.0.2
-      eslint-plugin-perfectionist: 4.15.1(eslint@10.0.2)(typescript@5.9.3)
+      eslint-plugin-perfectionist: 5.6.0(eslint@10.0.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  '@joshuaavalon/eslint-config-typescript@10.0.0(eslint@10.0.2)(typescript@5.9.3)':
+  '@joshuaavalon/eslint-config-typescript@11.0.0(eslint@10.0.2)(typescript@5.9.3)':
     dependencies:
-      '@joshuaavalon/eslint-config-javascript': 10.0.0(eslint@10.0.2)(typescript@5.9.3)
+      '@joshuaavalon/eslint-config-javascript': 11.0.2(eslint@10.0.2)(typescript@5.9.3)
+      '@stylistic/eslint-plugin': 5.9.0(eslint@10.0.2)
       eslint: 10.0.2
+      eslint-plugin-perfectionist: 5.6.0(eslint@10.0.2)(typescript@5.9.3)
       typescript-eslint: 8.56.1(eslint@10.0.2)(typescript@5.9.3)
     transitivePeerDependencies:
       - supports-color
@@ -681,16 +677,6 @@ snapshots:
   deep-is@0.1.4: {}
 
   escape-string-regexp@4.0.0: {}
-
-  eslint-plugin-perfectionist@4.15.1(eslint@10.0.2)(typescript@5.9.3):
-    dependencies:
-      '@typescript-eslint/types': 8.56.1
-      '@typescript-eslint/utils': 8.56.1(eslint@10.0.2)(typescript@5.9.3)
-      eslint: 10.0.2
-      natural-orderby: 5.0.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
 
   eslint-plugin-perfectionist@5.6.0(eslint@10.0.2)(typescript@5.9.3):
     dependencies:
