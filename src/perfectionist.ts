@@ -41,12 +41,11 @@ export const perfectionistRules: Omit<Rules, OmitRules> = {
   "@perfectionist/sort-enums": [
     "error",
     {
-      forceNumericSort: true,
       ignoreCase: true,
       order: "asc",
       partitionByComment: true,
       partitionByNewLine: false,
-      sortByValue: false,
+      sortByValue: "ifNumericEnum",
       type: "alphabetical"
     }
   ],
