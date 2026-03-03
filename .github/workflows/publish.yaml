@@ -14,8 +14,6 @@ jobs:
   release-please:
     name: release-please
     runs-on: ubuntu-latest
-    needs:
-      - check-secrets
     outputs:
       release-created: ${{ steps.release.outputs.release_created || false }}
     steps:
