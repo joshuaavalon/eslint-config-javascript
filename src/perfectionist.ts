@@ -100,7 +100,6 @@ export const perfectionistRules: Omit<Rules, OmitRules> = {
         "side-effect",
         "index",
         "side-effect-style",
-        "object",
         "unknown"
       ],
       ignoreCase: true,
