@@ -5,6 +5,8 @@ Not support is guaranteed. Use as your own risk.
 
 This configuration include both lint and format rules which may cause conflicts with other formatter like Prettier.
 
+> For <10.0.0, please check https://github.com/joshuaavalon/eslint-config.
+
 ## Getting Started
 
 ```
