@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.0.2](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.1...v11.0.2) (2026-03-03)
+
+
+### Bug Fixes
+
+* Fix @perfectionist/sort-imports ([48c4fd1](https://github.com/joshuaavalon/eslint-config-javascript/commit/48c4fd1a9a15673a61050d12d1050285ed1acc37))
+
 ## [11.0.1](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.0...v11.0.1) (2026-03-03)
 
 
