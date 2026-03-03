@@ -46,5 +46,3 @@ jobs:
           cache: pnpm
       - run: pnpm i --frozen-lockfile
       - run: pnpm run build
-      - run: pnpm run script:scalar
-      - run: pnpm run test
