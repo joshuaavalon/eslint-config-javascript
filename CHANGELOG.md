@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.0.1](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.0...v11.0.1) (2026-03-03)
+
+
+### Bug Fixes
+
+* Fix @perfectionist/sort-enums ([c0c3113](https://github.com/joshuaavalon/eslint-config-javascript/commit/c0c31133b183df9e64143578a2c78b35e8552635))
+
 ## [11.0.0](https://github.com/joshuaavalon/eslint-config-javascript/compare/v10.0.0...v11.0.0) (2026-03-03)
 
 
