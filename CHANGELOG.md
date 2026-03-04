@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.0.3](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.2...v11.0.3) (2026-03-04)
+
+
+### Bug Fixes
+
+* Update radix to off ([b98305c](https://github.com/joshuaavalon/eslint-config-javascript/commit/b98305c75a02b568f2dfb6c65c857e653898febb))
+
 ## [11.0.2](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.1...v11.0.2) (2026-03-03)
 
 
