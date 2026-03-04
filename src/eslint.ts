@@ -200,7 +200,7 @@ export const eslintRules: Omit<ESLintRules, DeprecatedRules> = {
   "prefer-rest-params": ["error"],
   "prefer-spread": ["error"],
   "prefer-template": ["error"],
-  radix: ["error", "as-needed"],
+  radix: ["off"],
   "require-atomic-updates": ["off"],
   "require-await": ["error"],
   "require-unicode-regexp": ["error"],
