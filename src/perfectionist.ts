@@ -1,5 +1,7 @@
+import perfectionistPlugin from "eslint-plugin-perfectionist";
+import { defineConfig } from "eslint/config";
 import type { Linter } from "eslint";
-import type { rules } from "eslint-plugin-perfectionist";
+import type { rules as perfectionistRules } from "eslint-plugin-perfectionist";
 import type { Prefix } from "./utils.js";
 
 type OmitRules =
@@ -10,9 +12,9 @@ type OmitRules =
   | "@perfectionist/sort-object-types"
   | "@perfectionist/sort-union-types";
 
-type Rules = Record<Prefix<keyof typeof rules, "@perfectionist/">, Linter.RuleSeverityAndOptions>;
+type Rules = Record<Prefix<keyof typeof perfectionistRules, "@perfectionist/">, Linter.RuleSeverityAndOptions>;
 
-export const perfectionistRules: Omit<Rules, OmitRules> = {
+const rules: Omit<Rules, OmitRules> = {
   "@perfectionist/sort-array-includes": [
     "error",
     {
@@ -177,3 +179,11 @@ export const perfectionistRules: Omit<Rules, OmitRules> = {
     }
   ]
 };
+
+const config = defineConfig({
+  name: "@joshuaavalon/eslint-config-javascript/perfectionist",
+  plugins: { "@perfectionist": perfectionistPlugin },
+  rules
+});
+
+export default config;

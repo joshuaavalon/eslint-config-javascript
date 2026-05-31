@@ -1,5 +1,7 @@
 # @joshuaavalon/eslint-config-javascript
 
+![NPM Version](https://img.shields.io/npm/v/%40joshuaavalon%2Feslint-config-javascript)
+
 This is the opinionated ESLint configuration repository that used by myself.
 Not support is guaranteed. Use as your own risk.
 
@@ -19,7 +21,7 @@ import globals from "globals";
 import jsConfig from "@joshuaavalon/eslint-config-javascript";
 
 {
-  ...jsConfig,
+  extends: [jsConfig],
   ignores: ["node_modules", "dist"],
   files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
   languageOptions: {

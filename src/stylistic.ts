@@ -1,7 +1,9 @@
+import stylisticPlugin from "@stylistic/eslint-plugin";
+import { defineConfig } from "eslint/config";
 import type { UnprefixedRuleOptions } from "@stylistic/eslint-plugin";
 import type { PrefixRules } from "./utils.js";
 
-export const stylisticRules: Omit<PrefixRules<UnprefixedRuleOptions, "@stylistic/">, `@stylistic/exp-${string}` | `@stylistic/jsx-${string}` | `@stylistic/type-${string}`> = {
+const rules: Omit<PrefixRules<UnprefixedRuleOptions, "@stylistic/">, `@stylistic/exp-${string}` | `@stylistic/jsx-${string}` | `@stylistic/type-${string}`> = {
   "@stylistic/array-bracket-newline": ["error", "consistent"],
   "@stylistic/array-bracket-spacing": ["error", "never"],
   "@stylistic/array-element-newline": [
@@ -189,3 +191,11 @@ export const stylisticRules: Omit<PrefixRules<UnprefixedRuleOptions, "@stylistic
   "@stylistic/wrap-regex": ["off"],
   "@stylistic/yield-star-spacing": ["error", "after"]
 };
+
+const config = defineConfig({
+  name: "@joshuaavalon/eslint-config-javascript/stylistic",
+  plugins: { "@stylistic": stylisticPlugin },
+  rules
+});
+
+export default config;

@@ -1,7 +1,8 @@
+import { defineConfig } from "eslint/config";
 import type { ESLintRules } from "eslint/rules";
 import type { DeprecatedRules } from "./deprecated.js";
 
-export const eslintRules: Omit<ESLintRules, DeprecatedRules> = {
+const rules: Omit<ESLintRules, DeprecatedRules> = {
   "accessor-pairs": ["error"], // Sometimes it is needed
   "array-callback-return": [
     "error",
@@ -215,3 +216,10 @@ export const eslintRules: Omit<ESLintRules, DeprecatedRules> = {
   "vars-on-top": ["error"],
   yoda: ["error"]
 };
+
+const config = defineConfig({
+  name: "@joshuaavalon/eslint-config-javascript/eslint",
+  rules
+});
+
+export default config;
