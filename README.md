@@ -17,15 +17,18 @@ npm i -D eslint @joshuaavalon/eslint-config-javascript
 
 ```js
 // eslint.config.js
-import globals from "globals";
 import jsConfig from "@joshuaavalon/eslint-config-javascript";
+import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
 
-{
-  extends: [jsConfig],
-  ignores: ["node_modules", "dist"],
-  files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
-  languageOptions: {
-    globals: { ...globals.node }
+
+export default defineConfig([
+  globalIgnores(["**/node_modules", "**/dist"], "Ignore Default Files"),
+  {
+    extends: [jsConfig],
+    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
+    languageOptions: { globals: { ...globals.node } },
+    name: "JavaScript Config"
   }
-}
+]);
 ```
