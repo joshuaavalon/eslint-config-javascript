@@ -2,8 +2,6 @@ import jsConfig from "@joshuaavalon/eslint-config-javascript";
 import tsConfig from "@joshuaavalon/eslint-config-typescript";
 import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
-import typescript from "typescript-eslint";
-
 
 export default defineConfig([
   globalIgnores(["**/node_modules", "**/dist"], "Ignore Default Files"),
@@ -16,13 +14,7 @@ export default defineConfig([
   {
     extends: [tsConfig],
     files: ["**/*.ts"],
-    languageOptions: {
-      parser: typescript.parser,
-      parserOptions: {
-        projectService: true,
-        tsconfigDirName: import.meta.dirname
-      }
-    },
+    languageOptions: { globals: { ...globals.node } },
     name: "TypeScript Config"
   }
 ]);
