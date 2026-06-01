@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
-    "target": "ES2021",
+    "target": "es2025",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "lib": ["ESNext"],
@@ -10,8 +10,6 @@
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
