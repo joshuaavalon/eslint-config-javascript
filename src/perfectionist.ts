@@ -26,20 +26,7 @@ const rules: Omit<Rules, OmitRules> = {
     }
   ],
   "@perfectionist/sort-classes": ["off"],
-  "@perfectionist/sort-decorators": [
-    "error",
-    {
-      ignoreCase: true,
-      order: "asc",
-      sortOnAccessors: true,
-      sortOnClasses: true,
-      sortOnMethods: true,
-      sortOnParameters: true,
-      sortOnProperties: true,
-      specialCharacters: "keep",
-      type: "alphabetical"
-    }
-  ],
+  "@perfectionist/sort-decorators": ["off"],
   "@perfectionist/sort-enums": [
     "error",
     {
