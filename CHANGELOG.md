@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.1](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.1.0...v11.1.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* Disable @perfectionist/sort-decorators ([0ce1472](https://github.com/joshuaavalon/eslint-config-javascript/commit/0ce147276ca1287b0536c5a8f1479e78462ec1f0))
+
 ## [11.1.0](https://github.com/joshuaavalon/eslint-config-javascript/compare/v11.0.3...v11.1.0) (2026-05-31)
 
 
